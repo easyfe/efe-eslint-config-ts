@@ -9,10 +9,10 @@
 
 #### 第二步
 
-```javascript
- 在项目根目录下面新建 .eslintrc.js 配置文件 文件配置如下
+在项目根目录下面新建 .eslintrc.js 配置文件 文件配置如下
 
-module.exports = {
+```javascript
+ module.exports = {
     extends: ["@easyfe/eslint-config-ts"],
 };
  
@@ -20,9 +20,9 @@ module.exports = {
 
 #### 第三步
 
-```javascript
- 在项目根目录下面新建 .prettierrc 配置文件 文件配置如下
+在项目根目录下面新建 .prettierrc 配置文件 文件配置如下
 
+```javascript
 {
     "tabWidth": 4,
     "trailingComma": "none",
@@ -31,6 +31,22 @@ module.exports = {
     "printWidth": 120,
     "singleQuote": false
 }
+```
+
+#### 第四步
+
+在项目根目录下面新建 `.editorconfig` 配置文件 文件配置如下
+
+```javascript
+root = true
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
 ```
 
 #### 注意

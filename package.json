@@ -1,7 +1,11 @@
 {
-  "name": "@syyfe/eslint-config-ts",
+  "name": "@easyfe/eslint-config-ts",
   "version": "0.0.1",
   "description": "eslint规则,针对脚手架、工具库等编写",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {},
   "dependencies": {
