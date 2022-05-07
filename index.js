@@ -12,8 +12,6 @@ module.exports = {
   },
   extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier", "plugin:prettier/recommended"],
   rules: {
-      //禁止存在未使用的变量
-      "no-unused-vars": "error",
       //禁止使用eval
       "no-eval": "error",
       //允许使用any类型
@@ -23,6 +21,13 @@ module.exports = {
       //允许require引入
       "@typescript-eslint/no-var-requires": "off",
       //perttier错误
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      //禁止存在未使用的变量，未使用参数不提示error
+      "no-unused-vars": [
+        "error",
+        // we are only using this rule to check for unused arguments since TS
+        // catches unused variables but not args.
+        { varsIgnorePattern: ".*", args: "none" },
+      ]
   }
 };
