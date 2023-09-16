@@ -21,7 +21,12 @@ module.exports = {
     //允许require引入
     "@typescript-eslint/no-var-requires": "off",
     //perttier错误
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     //禁止存在未使用的变量，未使用参数不提示error
     "no-unused-vars": [
       "error",

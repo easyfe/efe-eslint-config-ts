@@ -6,6 +6,7 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
+  "repository": "https://github.com/easyfe/efe-eslint-config-ts",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
